@@ -11,6 +11,8 @@ echo
 #GIVES USERS IN THE SYSTEM
 echo
 USERS=$(cat /etc/passwd | cut -d ":" -f 1)
-
+echo
 echo $USERS
-
+#GET IP ADDRESS OF THE SYSTEM
+IP=$(ipconfig)
+echo $IP
